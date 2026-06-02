@@ -1,16 +1,26 @@
-# React + Vite
+#  Projeto Didi Piscinas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema de gerenciamento de orçamentos desenvolvido para a empresa Didi Piscinas.
 
-Currently, two official plugins are available:
+# 📌 Objetivo
+Gerenciar as solicitações de orçamento de clientes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# ⚙️ Funcionalidades
+- Cadastro de orçamentos
+- Listagem de orçamentos
+- Edição de registros
+- Exclusão de registros
 
-## React Compiler
+# 🧰 Tecnologias
+- React
+- Vite
+- JavaScript
+- CSS
+- Supabase / SQL
+- Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 🌐 Link do sistema
+https:didi-piscinas.vercel.app
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 🗄️ Banco de dados
+Tabela: orcamentos
