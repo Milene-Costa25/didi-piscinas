@@ -85,18 +85,25 @@ const deletarOrcamento = async (id) => {
 
   if (error) {
     alert('Erro: ' + error.message)
-    console.log(error)
-  } else {
+gitg  } else {
     alert('Excluído com sucesso')
     fetchOrcamentos()
   }
 }
 
 const editarOrcamento = async (item) => {
+
+  const novaCidade = prompt(
+    'Digite a nova cidade:',
+    item.cidade
+  )
+
+  if (!novaCidade) return
+
   const { error } = await supabase
     .from('orcamentos')
     .update({
-      cidade: 'Cidade Editada'
+      cidade: novaCidade
     })
     .eq('id', item.id)
 
