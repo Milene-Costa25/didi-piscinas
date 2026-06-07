@@ -1,45 +1,131 @@
+# Projeto Didi Piscinas
 
-#  Projeto Didi Piscinas
-O sistema Didi Piscinas é uma aplicação desenvolvida para gerenciamento de solicitações de orçamentos de clientes de uma empresa de piscinas. 
-Ele permite que os dados sejam cadastrados, consultados,  e removidos de forma simples e organizada, centralizando todas as informações em um único sistema.
+Sistema web desenvolvido para a disciplina de Programas para Internet da FATEC Itu, utilizando React, Vite, Tailwind CSS e Supabase.
+
+## Objetivo
+
+O sistema foi desenvolvido para auxiliar no gerenciamento de solicitações de orçamentos da empresa Didi Piscinas, permitindo o cadastro de usuários, autenticação e armazenamento dos pedidos realizados pelos clientes.
+
+O objetivo é centralizar as informações em um único ambiente, facilitando o controle e o atendimento das solicitações.
+
+---
+
+## Funcionalidades
+
+### Autenticação
+
+* Cadastro de usuários
+* Login de usuários
+* Controle de acesso à área administrativa
+
+### Gerenciamento de Orçamentos
+
+* Cadastro de novos orçamentos
+* Visualização dos orçamentos cadastrados
+* Exclusão de registros
+* Estrutura preparada para edição de registros
+
+### Site Institucional
+
+* Página inicial
+* Sobre a empresa
+* Área de atendimento
+* Serviços oferecidos
+* Diferenciais da empresa
+* Depoimentos de clientes
+* Galeria de fotos
+* Formulário de orçamento
+* Botão de contato via WhatsApp
+
+---
+
+## Tecnologias Utilizadas
+
+* React
+* Vite
+* Tailwind CSS
+* JavaScript
+* HTML5
+* CSS3
+* Supabase
+* Vercel
+
+---
+
+## Estrutura do Banco de Dados
+
+### Tabela: usuarios
+
+| Campo      | Tipo      |
+| ---------- | --------- |
+| id         | bigint    |
+| email      | text      |
+| senha      | text      |
+| created_at | timestamp |
+
+### Tabela: orcamentos
+
+| Campo        | Tipo      |
+| ------------ | --------- |
+| id           | bigint    |
+| nome         | text      |
+| telefone     | text      |
+| email        | text      |
+| endereco     | text      |
+| cidade       | text      |
+| bairro       | text      |
+| tipo_servico | text      |
+| mensagem     | text      |
+| origem       | text      |
+| created_at   | timestamp |
+
+---
+
+## SQL Utilizado
+
+```sql
+create table usuarios (
+  id bigint generated always as identity primary key,
+  email text,
+  senha text,
+  created_at timestamp default now()
+);
+
+create table orcamentos (
+  id bigint generated always as identity primary key,
+  nome text,
+  telefone text,
+  email text,
+  endereco text,
+  cidade text,
+  bairro text,
+  tipo_servico text,
+  mensagem text,
+  origem text,
+  created_at timestamp default now()
+);
+```
+
+---
+
+## Observações
+
+A funcionalidade de edição de registros foi iniciada e a estrutura necessária foi implementada no sistema, mas, durante a fase final de desenvolvimento foram identificados ajustes pendentes para seu funcionamento completo.
+
+As funcionalidades de cadastro, autenticação, consulta e exclusão encontram-se operacionais.
+
+---
+
+## Publicação
+
+### GitHub
 
 
- # Objetivo do sistema
-O sistema foi desenvolvido com o objetivo de:
-•	Facilitar o registro de orçamentos de clientes 
-•	Organizar os dados em um banco centralizado 
-•	Permitir a exclusão de registros 
-•	Melhorar o controle interno da empresa 
-•	Aumentar a eficiência no atendimento de solicitações 
 
-
-# Funcionalidades do sistema
-O sistema possui as seguintes funcionalidades principais:
-
-# Cadastro de orçamentos
-Permite adicionar novos pedidos de orçamento com informações do cliente e da solicitação.
-
-# Listagem de orçamentos
-Exibe todos os orçamentos cadastrados em uma interface organizada, facilitando a visualização.
-
-# Edição de registros
-* A funcionalidade de edição de registros está implementada na interface, porém atualmente não está funcionando corretamente
-
-# Exclusão de registros
-Permite remover orçamentos do sistema quando não forem mais necessários.
-
-
-# Tecnologias utilizadas
-O projeto foi desenvolvido utilizando as seguintes tecnologias:
-
-•	React – biblioteca para construção da interface 
-•	Vite – ferramenta de build e desenvolvimento rápido 
-•	JavaScript – linguagem principal utilizada do sistema 
-•	CSS – estilização da interface 
-•	Supabase (SQL) – banco de dados e API 
-•	Vercel – plataforma de hospedagem e deploy
+### Projeto Online
 
 
 
+---
 
 
