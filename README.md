@@ -48,7 +48,7 @@ O objetivo é centralizar as informações em um único ambiente, facilitando o 
 * HTML5
 * CSS3
 * Supabase
-* Vercel
+* GitHub Pages
 
 ---
 
@@ -116,13 +116,15 @@ As funcionalidades de cadastro, autenticação, consulta e exclusão encontram-s
 
 ---
 
-## Publicação
+## Publicação (Projeto Online)
+
+https://milene-costa25.github.io/didi-piscinas/
 
 ### GitHub
 
+https://github.com/milene-costa25/didi-piscinas
 
 
-### Projeto Online
 
 
 
